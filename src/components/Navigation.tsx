@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import vebageLogo from "@/assets/vebage-logo.png";
 
 const Navigation = () => {
   const scrollToSection = (sectionId: string) => {
@@ -12,8 +13,11 @@ const Navigation = () => {
     <nav className="fixed top-0 w-full bg-background/80 backdrop-blur-md border-b border-border z-50">
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <div className="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent">
-            Spark Creative
+          <div className="flex items-center space-x-3">
+            <img src={vebageLogo} alt="Vebage" className="h-8 w-8" />
+            <div className="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent">
+              Vebage
+            </div>
           </div>
           
           <div className="hidden md:flex items-center space-x-8">

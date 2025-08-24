@@ -4,7 +4,7 @@ const Footer = () => {
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-4 gap-8">
           <div>
-            <div className="text-2xl font-bold mb-4">Spark Creative</div>
+            <div className="text-2xl font-bold mb-4">Vebage</div>
             <p className="text-background/80 text-sm leading-relaxed">
               Transforming businesses through innovative digital solutions, 
               beautiful designs, and cutting-edge technology.
@@ -37,14 +37,14 @@ const Footer = () => {
               <li><a href="#" className="hover:text-background transition-colors">LinkedIn</a></li>
               <li><a href="#" className="hover:text-background transition-colors">Instagram</a></li>
               <li><a href="#" className="hover:text-background transition-colors">Twitter</a></li>
-              <li><a href="mailto:hello@sparkcreative.agency" className="hover:text-background transition-colors">Email</a></li>
+              <li><a href="mailto:hello@vebage.com" className="hover:text-background transition-colors">Email</a></li>
             </ul>
           </div>
         </div>
         
         <div className="border-t border-background/20 mt-8 pt-8 text-center">
           <p className="text-background/60 text-sm">
-            © 2024 Spark Creative Agency. All rights reserved. Built with passion and innovation.
+            © 2024 Vebage. All rights reserved. Built with passion and innovation.
           </p>
         </div>
       </div>
