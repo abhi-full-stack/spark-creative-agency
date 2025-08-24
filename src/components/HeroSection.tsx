@@ -75,31 +75,52 @@ const HeroSection = () => {
               <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-accent/10 rounded-3xl"></div>
               <div className="absolute inset-0 bg-[linear-gradient(45deg,transparent_24%,rgba(255,255,255,.05)_25%,rgba(255,255,255,.05)_26%,transparent_27%,transparent_74%,rgba(255,255,255,.05)_75%,rgba(255,255,255,.05)_76%,transparent_77%,transparent),linear-gradient(-45deg,transparent_24%,rgba(255,255,255,.05)_25%,rgba(255,255,255,.05)_26%,transparent_27%,transparent_74%,rgba(255,255,255,.05)_75%,rgba(255,255,255,.05)_76%,transparent_77%,transparent)] bg-[length:30px_30px] rounded-3xl opacity-30"></div>
               
-              {/* Central futuristic element */}
+              {/* Futuristic Robot */}
               <div className="relative p-16 h-96 flex items-center justify-center">
-                <div className="relative">
-                  {/* Central core */}
-                  <div className="w-32 h-32 bg-gradient-to-br from-primary to-accent rounded-full flex items-center justify-center shadow-glow animate-pulse">
-                    <div className="w-20 h-20 bg-gradient-to-br from-accent to-primary rounded-full flex items-center justify-center">
-                      <div className="w-8 h-8 bg-foreground rounded-full"></div>
+                <div className="relative animate-float">
+                  {/* Robot Head */}
+                  <div className="relative">
+                    <div className="w-24 h-20 bg-gradient-to-br from-primary to-accent rounded-2xl shadow-glow mx-auto mb-2 border border-primary/20">
+                      {/* Eyes */}
+                      <div className="flex justify-center items-center h-full gap-3">
+                        <div className="w-3 h-3 bg-foreground rounded-full animate-pulse"></div>
+                        <div className="w-3 h-3 bg-foreground rounded-full animate-pulse" style={{animationDelay: '0.5s'}}></div>
+                      </div>
+                      {/* Antenna */}
+                      <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 w-0.5 h-6 bg-accent"></div>
+                      <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 w-2 h-2 bg-accent rounded-full animate-pulse"></div>
                     </div>
                   </div>
                   
-                  {/* Orbiting elements */}
-                  <div className="absolute inset-0 animate-spin" style={{animationDuration: '20s'}}>
-                    <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-4 h-4 bg-accent rounded-full shadow-glow"></div>
-                    <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-4 h-4 bg-primary rounded-full shadow-glow"></div>
-                    <div className="absolute left-0 top-1/2 transform -translate-y-1/2 w-4 h-4 bg-accent rounded-full shadow-glow"></div>
-                    <div className="absolute right-0 top-1/2 transform -translate-y-1/2 w-4 h-4 bg-primary rounded-full shadow-glow"></div>
+                  {/* Robot Body */}
+                  <div className="w-32 h-40 bg-gradient-to-br from-accent/20 to-primary/20 rounded-xl border border-accent/30 mx-auto relative backdrop-blur-sm">
+                    {/* Chest Panel */}
+                    <div className="absolute top-4 left-1/2 transform -translate-x-1/2 w-16 h-12 bg-gradient-to-br from-primary/30 to-accent/30 rounded-lg border border-primary/20">
+                      <div className="flex justify-center items-center h-full">
+                        <div className="w-8 h-2 bg-accent/60 rounded-full animate-pulse"></div>
+                      </div>
+                    </div>
+                    
+                    {/* Control Buttons */}
+                    <div className="absolute top-20 left-4 w-2 h-2 bg-accent rounded-full animate-pulse"></div>
+                    <div className="absolute top-20 right-4 w-2 h-2 bg-primary rounded-full animate-pulse" style={{animationDelay: '1s'}}></div>
+                    <div className="absolute top-24 left-6 w-2 h-2 bg-accent rounded-full animate-pulse" style={{animationDelay: '0.5s'}}></div>
+                    <div className="absolute top-24 right-6 w-2 h-2 bg-primary rounded-full animate-pulse" style={{animationDelay: '1.5s'}}></div>
                   </div>
                   
-                  {/* Connection lines */}
-                  <div className="absolute inset-0">
-                    <div className="absolute top-1/2 left-1/2 w-0.5 h-16 bg-gradient-to-t from-primary to-transparent transform -translate-x-1/2 -translate-y-full"></div>
-                    <div className="absolute top-1/2 left-1/2 w-0.5 h-16 bg-gradient-to-b from-primary to-transparent transform -translate-x-1/2"></div>
-                    <div className="absolute top-1/2 left-1/2 w-16 h-0.5 bg-gradient-to-l from-accent to-transparent transform -translate-y-1/2 -translate-x-full"></div>
-                    <div className="absolute top-1/2 left-1/2 w-16 h-0.5 bg-gradient-to-r from-accent to-transparent transform -translate-y-1/2"></div>
+                  {/* Robot Arms */}
+                  <div className="absolute top-6 -left-8 w-6 h-24 bg-gradient-to-b from-primary/20 to-accent/20 rounded-full border border-primary/20 animate-pulse" style={{animationDelay: '2s'}}></div>
+                  <div className="absolute top-6 -right-8 w-6 h-24 bg-gradient-to-b from-accent/20 to-primary/20 rounded-full border border-accent/20 animate-pulse" style={{animationDelay: '2.5s'}}></div>
+                  
+                  {/* Robot Legs */}
+                  <div className="flex justify-center gap-4 mt-2">
+                    <div className="w-6 h-16 bg-gradient-to-b from-primary/20 to-accent/20 rounded-full border border-primary/20"></div>
+                    <div className="w-6 h-16 bg-gradient-to-b from-accent/20 to-primary/20 rounded-full border border-accent/20"></div>
                   </div>
+                  
+                  {/* Energy Field */}
+                  <div className="absolute inset-0 rounded-full border-2 border-primary/20 animate-ping" style={{animationDuration: '3s'}}></div>
+                  <div className="absolute inset-0 rounded-full border border-accent/20 animate-ping" style={{animationDuration: '4s', animationDelay: '1s'}}></div>
                 </div>
               </div>
             </div>
